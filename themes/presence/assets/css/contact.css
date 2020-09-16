@@ -1,0 +1,10 @@
+form * {
+  display: block;
+}
+
+form input, form textarea {
+  font-size: 1em;
+  font-family: monospace;
+  max-width: 100%;
+  width: 22rem;
+}

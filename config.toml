@@ -1,0 +1,7 @@
+baseURL = "http://localhost/"
+languageCode = "en-us"
+# title = "Presence Web Services"
+theme = "presence"
+[params]
+  author = "Presence Web Services"
+  description = "Cultivate your online presence. We offer custom website creation services. Contact us today!"

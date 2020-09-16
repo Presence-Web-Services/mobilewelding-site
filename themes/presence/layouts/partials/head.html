@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="{{ .Site.Params.Author }}">
+
+<meta name="description" content="{{ .Description | default .Site.Params.Description }}">
+<title>{{ if .Title }}{{ .Title }} - {{ end }}Presence Web Services</title>
+
+<meta name="theme-color" content="#0f4c81">
+<link rel="icon" href="/icons/favicon.svg">
+<link rel="mask-icon" href="/icons/favicon.svg" color="#0f4c81">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+{{ partial "asset.html" (dict "file" "/manifest.json") }}
+
+{{ partial "asset.html" (dict "file" "/css/style.css") }}
