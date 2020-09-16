@@ -5,14 +5,14 @@ name = "Presence"
 license = "MIT"
 licenselink = "https://github.com/presence-web-services/site/themes/presence/LICENSE"
 description = "Theme for Presence Web Services website"
-homepage = "http://presencewebservices.net/"
+homepage = "https://presencewebservices.net/"
 tags = []
 features = []
 min_version = "0.41.0"
 
 [author]
   name = "Presence Web Services"
-  homepage = "http://presencewebservices.net/"
+  homepage = "https://presencewebservices.net/"
 
 # If porting an existing theme
 [original]
