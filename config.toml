@@ -1,4 +1,4 @@
-baseURL = "http://localhost/"
+baseURL = "https://presencewebservices.net/"
 languageCode = "en-us"
 # title = "Presence Web Services"
 theme = "presence"

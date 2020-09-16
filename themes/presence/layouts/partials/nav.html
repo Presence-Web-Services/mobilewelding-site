@@ -1,4 +1,5 @@
 <nav>
-  <a href="/">home</a>
-  <a href="/contact">contact us</a>
+  {{ range where .Site.Pages "Params.nav" true }}
+    <a href="{{ .RelPermalink }}">{{ lower .Title }}</a>
+  {{ end }}
 </nav>
