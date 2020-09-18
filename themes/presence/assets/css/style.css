@@ -65,7 +65,7 @@ aside header img {
 
 aside nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media (min-width: 900px) {
   aside nav {
@@ -96,7 +96,23 @@ a, button {
   min-height: 48px;
 }
 
+button {
+  font-size: 1em;
+  border: none;
+  color: white;
+  background-color: #0f4c81;
+}
+button:active, button:disabled {
+  background-color: gray;
+}
+
 a.cta_link {
   color: #0f4c81;
-  font-size: 2em;
+  font-size: 1.2em;
+}
+
+img.pop_out {
+  width: 12px;
+  height: 12px;
+  margin: 0 0.3em;
 }

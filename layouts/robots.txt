@@ -1,0 +1,7 @@
+User-agent: *
+
+{{ range where .Pages "Params.robothide" true }}
+Disallow: {{ .RelPermalink }}
+{{ end }}
+
+Sitemap: {{ "sitemap.xml" | absLangURL }}

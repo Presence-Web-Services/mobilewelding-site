@@ -1,7 +1,9 @@
 baseURL = "https://presencewebservices.net/"
 languageCode = "en-us"
-# title = "Presence Web Services"
+title = "Home"
 theme = "presence"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   author = "Presence Web Services"
   description = "Cultivate your online presence. We offer custom website creation services. Contact us today!"
