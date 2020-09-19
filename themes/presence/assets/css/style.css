@@ -73,7 +73,7 @@ aside nav {
     right: 0;
     top: 6em;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     justify-content: initial;
   }
 }
@@ -85,6 +85,19 @@ aside nav a {
   padding: 0.6em 0;
   margin: 0.6em;
   text-align: center;
+}
+
+aside footer p {
+  margin: 0;
+}
+aside footer p small {
+  font-size: 0.6em;
+}
+@media (min-width: 900px) {
+  aside footer {
+    position: fixed;
+    bottom: 0;
+  }
 }
 
 h1, h2, a {
@@ -115,4 +128,16 @@ img.pop_out {
   width: 12px;
   height: 12px;
   margin: 0 0.3em;
+}
+
+#skip_link {
+  position: absolute;
+  right: 0;
+  top: -3em;
+  z-index: 20;
+  background-color: white;
+  transition: top 0.6s ease;
+}
+#skip_link:focus {
+  top: 0;
 }

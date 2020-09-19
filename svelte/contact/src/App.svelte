@@ -1,5 +1,5 @@
 <script>
-let email, message, hp;
+let form, email, message, hp;
 let emailError, messageError, hpError;
 let responseError, responseSuccess;
 let sending;
@@ -43,9 +43,8 @@ function clearFields() {
 }
 
 function sendData() {
-  let contactForm = document.getElementById("contact-form");
   const xhr = new XMLHttpRequest();
-  const formData = new FormData(contactForm);
+  const formData = new FormData(form);
   xhr.addEventListener('load', (event) => {
     if (event.target.status != 200) {
       responseError = event.target.responseText.trim();
@@ -90,10 +89,7 @@ function hpChange() {
 
 </script>
 
-<h1>Contact</h1>
-<p>We reply to emails the same day we receive them.</p>
-<p>All fields are required.</p>
-<form id="contact-form">
+<form bind:this={form}>
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" size="33" maxlength="50" required bind:value={email} on:input={emailChange}>
   <label for="message">Message:</label>

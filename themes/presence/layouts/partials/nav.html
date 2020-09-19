@@ -1,6 +1,6 @@
 <nav>
   {{ $currentPage := . }}
   {{ range .Site.Pages.Reverse }}
-    <a href="{{ .RelPermalink }}">{{ if (eq . $currentPage) }}> {{ end }}{{ lower .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ if (eq . $currentPage) }}>&nbsp;{{ end }}{{ singularize (lower .Title) }}</a>
   {{ end }}
 </nav>

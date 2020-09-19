@@ -43,7 +43,7 @@ function clearFields() {
 }
 
 async function getJWT() {
-  let url = "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
+  let url = "https://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
   const response = await fetch(url, {
     headers: {
       'Metadata-Flavor': 'Google',

@@ -5,8 +5,9 @@
     {{- block "head" . }}{{- end }}
   </head>
   <body>
+    <a href="#main" id="skip_link" class="cta_link">Skip to main content</a>
     {{- partial "aside.html" . -}}
-    <main>
+    <main id="main">
       {{- block "main" . }}{{- end }}
     </main>
   </body>
