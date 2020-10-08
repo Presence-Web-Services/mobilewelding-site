@@ -1,5 +1,5 @@
 <script>
-let email, message, hp;
+let form, email, message, hp;
 let emailError, messageError, hpError;
 let responseError, responseSuccess;
 let sending;
@@ -43,8 +43,12 @@ function clearFields() {
 }
 
 async function getJWT() {
+  // let url = "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
   let url = "https://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
+  // let url = "https://metadata/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
+  // let url = "https://169.254.169.254/computeMetadata/v1/instance/service-accounts/default/identity?audience=https://inquirer-private-c4kbbrskpq-uc.a.run.app"
   const response = await fetch(url, {
+    // mode: 'no-cors',
     headers: {
       'Metadata-Flavor': 'Google',
     }
@@ -61,7 +65,7 @@ function sendData() {
   return;
   let contactForm = document.getElementById("contact-form");
   const xhr = new XMLHttpRequest();
-  const formData = new FormData(contactForm);
+  const formData = new FormData(form);
   xhr.addEventListener('load', (event) => {
     if (event.target.status != 200) {
       responseError = event.target.responseText.trim();
@@ -75,7 +79,7 @@ function sendData() {
     responseError = 'Error: No response from server.'
     sending = false;
   });
-  xhr.open('POST', '/inquire');
+  xhr.open('POST', '/inquire/');
   xhr.send(formData);
 }
 
@@ -106,10 +110,7 @@ function hpChange() {
 
 </script>
 
-<h1>Contact</h1>
-<p>We reply to emails the same day we receive them.</p>
-<p>All fields are required.</p>
-<form id="contact-form">
+<form bind:this={form}>
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" size="33" maxlength="50" required bind:value={email} on:input={emailChange}>
   <label for="message">Message:</label>
