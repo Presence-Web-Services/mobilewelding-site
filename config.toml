@@ -7,4 +7,3 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   author = "Presence Web Services"
   description = "Cultivate your online presence. We offer custom website creation services. Contact us today!"
-  phone = "+16086181805"

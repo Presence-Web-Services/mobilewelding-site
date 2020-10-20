@@ -23,7 +23,7 @@
     "longitude": -89.335493
   },
   "url": "{{ .Site.BaseURL }}",
-  "telephone": "{{ .Site.Params.phone }}",
+  "telephone": "+16086181805",
   "priceRange": "$$",
   "openingHoursSpecification": [
     {
@@ -33,12 +33,19 @@
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
         "Saturday",
         "Sunday"
       ],
-      "opens": "07:00",
-      "closes": "19:00"
+      "opens": "00:00",
+      "closes": "00:00"
     }
   ]
 }
