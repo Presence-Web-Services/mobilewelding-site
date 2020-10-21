@@ -58,7 +58,7 @@ function sendData() {
     responseError = 'Error: No response from server.'
     sending = false;
   });
-  xhr.open('POST', '/inquire/');
+  xhr.open('POST', 'https://inquirer-c4kbbrskpq-uc.a.run.app');
   xhr.send(formData);
 }
 
