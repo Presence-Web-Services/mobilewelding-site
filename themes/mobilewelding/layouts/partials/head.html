@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="{{ .Site.Params.author }}">
+
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<title>{{ if .Title }}{{ .Title }} - {{ end }}Mobile Welding LLC</title>
+
+<meta name="theme-color" content="#9B111E">
+<link rel="icon" href="/icons/favicon.svg">
+<link rel="mask-icon" href="/icons/favicon.svg" color="#9B111E">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+{{ partial "asset.html" (dict "file" "/manifest.json") }}
+
+{{ partial "asset.html" (dict "file" "/css/style.css") }}

@@ -1,9 +1,9 @@
-baseURL = "https://presencewebservices.net"
+baseURL = "https://mobilewelding.llc"
 languageCode = "en-us"
 title = "Home"
-theme = "presence"
+theme = "mobilewelding"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   author = "Presence Web Services"
-  description = "Establish your online presence. We offer custom website design and creation services. Contact us today!"
+  description = ""

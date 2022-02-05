@@ -1,0 +1,10 @@
+{{ define "head" }}
+  {{ partial "asset.html" (dict "file" .Params.css) }}
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
+  {{ range .Pages }}
+    {{ .Render (singularize .Section) }}
+  {{ end }}
+{{ end }}

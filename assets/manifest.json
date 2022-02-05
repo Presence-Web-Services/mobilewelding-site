@@ -1,0 +1,11 @@
+{
+  "name": "Mobile Welding LLC",
+  "short_name": "MobileWelding",
+  "icons": [{
+      "src": "google-touch-icon.png",
+      "sizes": "512x512"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#9B111E",
+  "display": "fullscreen"
+}
