@@ -90,7 +90,7 @@ function sendEmail(event) {
   checkStars();
   checkreview();
   checkHP();
-  if (nameError || emailError || starsError || eviewError || hpError) {
+  if (nameError || emailError || starsError || reviewError || hpError) {
     sending = false;
     return;
   }
