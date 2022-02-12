@@ -1,9 +1,9 @@
 baseURL = "https://mobilewelding.llc"
 languageCode = "en-us"
-title = "Home"
 theme = "mobilewelding"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
-  author = "Presence Web Services"
-  description = ""
+  name = "Mobile Welding LLC"
+  author = "Presence Web Services LLC"
+  description = "Mobile Welding LLC offers mobile & portable metal welding, cutting, and repair services."

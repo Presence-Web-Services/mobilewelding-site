@@ -3,5 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-  {{ .Content }}
+  {{ with .Content }}
+    {{- . -}}
+  {{ else }}
+    {{ .Render (singularize .Section) }}
+  {{ end }}
 {{ end }}
