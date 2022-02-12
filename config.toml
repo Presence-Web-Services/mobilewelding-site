@@ -1,4 +1,4 @@
-baseURL = "https://mobilewelding.llc"
+baseURL = "https://mobilewelding.llc/"
 languageCode = "en-us"
 theme = "mobilewelding"
 enableRobotsTXT = true
