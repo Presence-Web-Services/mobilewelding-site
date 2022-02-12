@@ -1,1 +1,6 @@
-<a href="/photos/{{ .File.BaseFileName }}.jpg"><img class="photo" src="/photos/{{ .File.BaseFileName }}.jpg" alt="{{ .Params.alt }}"></a>
+<a href="{{ .RelPermalink }}">
+  <picture>
+    <source type="image/webp" srcset="{{ .RelPermalink }}288w1d.webp, {{ .RelPermalink }}288w2d.webp 2x, {{ .RelPermalink }}288w3d.webp 3x">
+    <img class="photo" src="{{ .RelPermalink }}288w1d.jpg" srcset="{{ .RelPermalink }}288w2d.jpg 2x, {{ .RelPermalink }}288w3d.jpg 3x" alt="{{ .Params.alt }}" width="288">
+  </picture>
+</a>
