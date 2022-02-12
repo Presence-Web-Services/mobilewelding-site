@@ -2,12 +2,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="{{ .Site.Params.author }}">
 
-<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="description" content='{{ if and .IsPage (eq .Section "reviews") }}{{ print "Stars: " .Params.stars " Review: " .Params.review }}{{ else if and .IsPage (eq .Section "photos") }}{{ .Params.alt }}{{ else }}{{ .Description | default .Site.Params.description }}{{ end }}'>
 <title>{{ if .Title }}{{ .Title }} - {{ end }}Mobile Welding LLC</title>
 
-<meta name="theme-color" content="#9B111E">
+<meta name="theme-color" content="#96101E">
 <link rel="icon" href="/icons/favicon.svg">
-<link rel="mask-icon" href="/icons/favicon.svg" color="#9B111E">
+<link rel="mask-icon" href="/icons/favicon.svg" color="#96101E">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 {{ partial "asset.html" (dict "file" "/manifest.json") }}
 

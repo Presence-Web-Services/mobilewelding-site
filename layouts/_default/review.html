@@ -1,8 +1,8 @@
 <section class="review">
-  <small>{{ time.Format "Monday, Jan 2, 2006" .Date }}</small>
-  <h3>{{ .Title }}</h3>
+  <small><time datetime='{{ .Date.Format "2006-01-02T15:04:05-07:00" }}'>{{ time.Format "Monday, Jan 2, 2006" .Date }}</time></small>
+  <h3><a class="cta_link" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   {{ range seq .Params.stars }}
     <img src="/icons/star.svg" alt="Star icon" class="star" width="33px" height="33px">
   {{ end }}
-  <p>{{ .Content }}</p>
+  <p>{{ .Params.review }}</p>
 </section>

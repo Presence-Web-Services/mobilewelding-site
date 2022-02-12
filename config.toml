@@ -6,4 +6,4 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [params]
   name = "Mobile Welding LLC"
   author = "Presence Web Services LLC"
-  description = "Mobile Welding LLC offers mobile & portable metal welding, cutting, and repair services."
+  description = "Mobile Welding LLC offers mobile and portable metal welding, cutting, and repair services."

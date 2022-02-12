@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": {{ .Site.BaseURL }},
+  "name": "{{ .Site.Params.name }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1200 River View Ave Apt 141",
+    "addressLocality": "Stevens Point",
+    "addressRegion": "WI",
+    "postalCode": "54481",
+    "addressCountry": "US"
+  },
+  "image": [
+    {{ print .Site.BaseURL "photos/garage-table/288w3d.jpg" }},
+    {{ print .Site.BaseURL "photos/plasma-cut-rebar/288w3d.jpg" }},
+    {{ print .Site.BaseURL "photos/mobile-setup/288w3d.jpg" }},
+    {{ print .Site.BaseURL "photos/inspecting-setup/288w3d.jpg" }},
+    {{ print .Site.BaseURL "photos/setup-close/288w3d.jpg" }},
+    {{ print .Site.BaseURL "photos/trailer-fender-mig/288w3d.jpg" }}
+  ]
+}
+</script>

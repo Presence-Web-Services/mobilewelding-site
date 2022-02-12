@@ -2,27 +2,27 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "{{ .Site.BaseURL }}",
+  "@id": {{ .Site.BaseURL }},
   "name": "{{ .Site.Params.name }}",
-  "logo": "{{ .Site.BaseURL }}/icons/favicon.svg",
+  "logo": {{ print .Site.BaseURL "icons/favicon.svg" }},
   "image": [
-    "{{ .Site.BaseURL }}/icons/favicon.svg",
-    "{{ .Site.BaseURL }}/icons/logo_text_blue.svg"
+    {{ print .Site.BaseURL "icons/favicon.svg" }},
+    {{ print .Site.BaseURL "icons/logo_text_red.svg" }}
   ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "4385 Sequoia Dr",
-    "addressLocality": "Windsor",
+    "streetAddress": "1200 River View Ave Apt 141",
+    "addressLocality": "Stevens Point",
     "addressRegion": "WI",
-    "postalCode": "53598",
+    "postalCode": "54481",
     "addressCountry": "US"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 43.218312,
-    "longitude": -89.335493
+    "latitude": 44.502885,
+    "longitude": -89.5815615
   },
-  "url": "{{ .Site.BaseURL }}",
+  "url": {{ .Site.BaseURL }},
   "telephone": "+17154460615",
   "priceRange": "$$",
   "openingHoursSpecification": [
