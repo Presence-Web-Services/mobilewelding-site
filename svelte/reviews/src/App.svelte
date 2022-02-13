@@ -59,7 +59,8 @@ function checkHP() {
 }
 
 function clearFields() {
-  name = email = stars = review = hp = "";
+  name = email = review = hp = "";
+  stars = 5;
 }
 
 function sendData() {
