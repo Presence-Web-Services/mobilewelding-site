@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+gcloud config set project mobilewelding-website
+docker tag mobilewelding gcr.io/mobilewelding-website/website
+docker push gcr.io/mobilewelding-website/website
+gcloud run deploy website --image gcr.io/mobilewelding-website/website:latest
