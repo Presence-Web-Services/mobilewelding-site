@@ -11,4 +11,6 @@
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 {{ partial "asset.html" (dict "file" "/manifest.json") }}
 
+{{ template "_internal/google_analytics_async.html" . }}
+
 {{ partial "asset.html" (dict "file" "/css/style.css") }}

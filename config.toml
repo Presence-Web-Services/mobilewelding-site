@@ -3,6 +3,7 @@ languageCode = "en-us"
 theme = "mobilewelding"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
+googleAnalytics = "UA-220403400-1"
 [params]
   name = "Mobile Welding LLC"
   author = "Presence Web Services LLC"
