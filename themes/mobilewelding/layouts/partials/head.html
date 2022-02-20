@@ -7,10 +7,17 @@
 
 <meta name="theme-color" content="#96101E">
 <link rel="icon" href="/icons/favicon.svg">
-<link rel="mask-icon" href="/icons/favicon.svg" color="#96101E">
+<link rel="mask-icon" href="/icons/mask-icon.svg" color="#96101E">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 {{ partial "asset.html" (dict "file" "/manifest.json") }}
 
-{{ template "_internal/google_analytics_async.html" . }}
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+{{ $aldrichFont := "family=Aldrich" }}
+{{ $fontLink := printf "https://fonts.googleapis.com/css2?%s&display=swap" $aldrichFont }}
+<link rel="preload" href="{{ $fontLink }}" as="style" type="text/css">
 
 {{ partial "asset.html" (dict "file" "/css/style.css") }}
+
+<link href="{{ $fontLink }}" rel="stylesheet">
+
+{{ template "_internal/google_analytics_async.html" . }}
