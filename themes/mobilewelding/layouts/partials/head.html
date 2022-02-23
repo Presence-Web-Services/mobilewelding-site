@@ -3,7 +3,7 @@
 <meta name="author" content="{{ .Site.Params.author }}">
 
 <meta name="description" content='{{ if and .IsPage (eq .Section "reviews") }}{{ print "Stars: " .Params.stars " Review: " .Params.review }}{{ else if and .IsPage (eq .Section "photos") }}{{ .Params.alt }}{{ else }}{{ .Description | default .Site.Params.description }}{{ end }}'>
-<title>{{ if .Title }}{{ .Title }} - {{ end }}Mobile Welding LLC</title>
+<title>{{ if (eq .Title "Home") }}Mobile Welding LLC - {{ .Params.longTitle }}{{ else if .Title }}{{ .Title }} - Mobile Welding LLC{{ else }}Mobile Welding LLC{{ end }}</title>
 
 <meta name="theme-color" content="#96101E">
 <link rel="icon" href="/icons/favicon.svg">
