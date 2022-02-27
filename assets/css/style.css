@@ -99,7 +99,7 @@ aside footer p small {
 
 h1, h2, h3, h4, h5, h6, a.cta_link, a.big_cta_link, nav a {
   font-family: 'Aldrich', sans-serif;
-  font-display: fallback;
+  font-display: swap;
 }
 
 a, button {
